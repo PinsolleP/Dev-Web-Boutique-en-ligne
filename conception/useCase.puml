@@ -1,0 +1,18 @@
+@startuml
+left to right direction
+
+actor Utilisateur
+actor Administrateur
+
+rectangle "Boutique de loisirs créatifs" {
+    usecase Consulter les articles
+    usecase Filtrer les articles par catégorie
+    usecase Consulter le panier
+    usecase Ajouter un article au panier
+    usecase Retirer un article du panier
+    usecase Valider une commande
+    usecase Confirmer la commande
+
+}
+
+@enduml
