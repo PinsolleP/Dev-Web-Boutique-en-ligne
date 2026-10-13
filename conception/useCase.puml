@@ -1,18 +1,37 @@
 @startuml
 left to right direction
 
-actor Utilisateur
-actor Administrateur
+actor "Utilisateur" as U
+actor "Administrateur" as A
 
 rectangle "Boutique de loisirs créatifs" {
-    usecase Consulter les articles
-    usecase Filtrer les articles par catégorie
-    usecase Consulter le panier
-    usecase Ajouter un article au panier
-    usecase Retirer un article du panier
-    usecase Valider une commande
-    usecase Confirmer la commande
+    usecase "Consulter les articles" as UC1
+    usecase "Filtrer les articles par catégorie" as UC2
+    usecase "Consulter le panier" as UC3
+    usecase "Ajouter un article au panier" as UC4
+    usecase "Retirer un article du panier" as UC5
+    usecase "Valider une commande" as UC6
+    usecase "Confirmer la commande" as UC7
+
+    usecase "Consulter la liste des articles" as UC8
+    usecase "Ajouter un article" as UC9
+    usecase "Modifier un article" as UC10
+    usecase "Supprimer un article" as UC11
+    usecase "Consulter la liste des catégories" as UC12
+    usecase "Ajouter une catégorie" as UC13
+    usecase "Modifier une catégorie" as UC14
+    usecase "Supprimer une catégorie" as UC15
 
 }
+
+U -- UC1
+U -- UC2
+U -- UC3
+U -- UC4
+U -- UC5
+U -- UC6
+U -- UC7
+
+UC6 ..> UC7 : <<include>>
 
 @enduml
