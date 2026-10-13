@@ -21,6 +21,7 @@ rectangle "Boutique de loisirs créatifs" {
     usecase "Ajouter une catégorie" as UC13
     usecase "Modifier une catégorie" as UC14
     usecase "Supprimer une catégorie" as UC15
+    usecase "S'authentifier" as UC16
 
     UC6 -[hidden]down- UC7
 
@@ -32,6 +33,7 @@ U -- UC3
 U -- UC4
 U -- UC5
 U -- UC6
+U -- UC16
 
 A -- UC8
 A -- UC9
@@ -41,7 +43,22 @@ A -- UC12
 A -- UC13
 A -- UC14
 A -- UC15
+A -- UC16
 
 UC6 ..> UC7 : <<include>>
+
+UC3 ..> UC16 : <<include>>
+UC4 ..> UC16 : <<include>>
+UC5 ..> UC16 : <<include>>
+UC6 ..> UC16 : <<include>>
+
+UC8 ..> UC16 : <<include>>
+UC9 ..> UC16 : <<include>>
+UC10 ..> UC16 : <<include>>
+UC11 ..> UC16 : <<include>>
+UC12 ..> UC16 : <<include>>
+UC13 ..> UC16 : <<include>>
+UC14 ..> UC16 : <<include>>
+UC15 ..> UC16 : <<include>>
 
 @enduml
