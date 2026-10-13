@@ -1,0 +1,120 @@
+@startuml Class Diagram
+skinparam Style strictuml
+skinparam groupInheritance 1
+
+class Person {
+    -personId : int
+    -lastName : String
+    -firstName : String
+    -email : String
+    +getPersonId() : int
+    +getLastName() : String
+    +getFirstName() : String
+    +getEmail() : String
+    +setPersonId(int id) : void
+    +setLastName(String lastName) : void
+    +setFirstName(String firstName) : void
+    +setEmail(String email) : void
+    +login(String login, String password) : boolean
+}
+
+class User {
+    +placeOrder(List<Order> order) : boolean
+}
+
+class Administrator {
+    -administratorId : int
+    -login : String
+    -password : String
+    +getAdministratorId() : int
+    +getLogin() : String
+    +getPassword() : String
+    +setAdministratorId(int id) : void
+    +setLogin(String login) : void
+    +setPassword(String password) : void
+}
+
+class Product {
+    -productId : int
+    -name : String
+    -price : double
+    -description : String
+    -picture : String
+    +getProductId() : int
+    +getName() : String
+    +getPrice() : double
+    +getDescription() : String
+    +getPicture() : String
+    +setProductId(int id) : void
+    +setName(String name) : void
+    +setPrice(double price) : void
+    +setDescription(String description) : void
+    +setPicture(String picture) : void
+}
+
+class Category {
+    -categoryId : int
+    -label : String
+    -description : String
+    +getCategoryId() : int
+    +getLabel() : String
+    +getDescription() : String
+    +setCategoryId(int id) : void
+    +setLabel(String label) : void
+    +setDescription(String description) : void
+}
+
+class Order {
+    -orderId : int
+    -date : Date
+    -status : String
+    +getOrderId() : int
+    +getDate() : Date
+    +getStatus() : String
+    +setOrderId(int id) : void
+    +setDate(Date date) : void
+    +setStatus(String status) : void
+}
+
+class ShoppingCart {
+    -cartId : int
+    -quantity : int
+    -date : Date
+    -active : boolean
+    +getCartId() : int
+    +getQuantity() : int
+    +getDate() : Date
+    +getActive() : boolean
+    +setCartId(int id) : void
+    +setQuantity(int quantity) : void
+    +setDate(Date date) : void
+    +setActive(boolean active) : void
+    +addProduct(Product product) : boolean
+    +removeProduct(int id) : boolean
+}
+
+class OrderLine {
+    -orderLineId : int
+    -quantity : int
+    -unitPriceAtPurchase : double
+    +getOrderLineId() : int
+    +getQuantity() : int
+    +getUnitPriceAtPurchase() : double
+    +setOrderLineId(int id) : void
+    +getQuantity(int quantity) : void
+    +setUnitPriceAtPurchase(double price) : void
+}
+
+Product "*" -- "1" Category
+User "1" -- "*" Order
+Order "1" -- "*" OrderLine
+Product "1" -- "*" OrderLine
+ShoppingCart "1" -- "*" OrderLine
+ShoppingCart "*" -- "1" User
+
+Person <|-- User
+Person <|-- Administrator
+
+
+
+@enduml
