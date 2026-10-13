@@ -22,6 +22,8 @@ rectangle "Boutique de loisirs créatifs" {
     usecase "Modifier une catégorie" as UC14
     usecase "Supprimer une catégorie" as UC15
 
+    UC6 -[hidden]down- UC7
+
 }
 
 U -- UC1
@@ -30,7 +32,15 @@ U -- UC3
 U -- UC4
 U -- UC5
 U -- UC6
-U -- UC7
+
+A -- UC8
+A -- UC9
+A -- UC10
+A -- UC11
+A -- UC12
+A -- UC13
+A -- UC14
+A -- UC15
 
 UC6 ..> UC7 : <<include>>
 
