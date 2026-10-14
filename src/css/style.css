@@ -168,3 +168,161 @@ body {
     display: block;
     border-radius: 12px;
 }
+
+/* Largeur du contenu de la page d'accueil */
+.accueil .container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Bandeau de navigation */
+.navbar {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    background-color: #E5D9F0;
+}
+
+/* Contenu du bandeau */
+.navbar .container-fluid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Logo et nom de la marque */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    padding: 10px 15px;
+}
+
+/* Image du logo */
+.logo-image {
+    height: 45px;
+    width: auto;
+    display: block;
+}
+
+/* Texte de la marque */
+.logo-texte {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-nom {
+    color: #382744;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.logo-description {
+    color: #6B4B8A;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+/* Liens de navigation */
+.navbar-nav > li > a.lien-navigation {
+    color: #382744;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 25px 20px;
+}
+
+/* Survol des liens */
+.navbar-nav > li > a.lien-navigation:hover {
+    color: #6B4B8A;
+    background-color: #E5D9F0;
+}
+
+/* Compteur du panier */
+.compteur-panier {
+    display: inline-block;
+    min-width: 24px;
+    padding: 3px 7px;
+    margin-left: 4px;
+    border-radius: 50%;
+    background-color: #6B4B8A;
+    color: #FFFFFF;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Section du kit créatif */
+.kit {
+    background-color: #E5D9F0;
+    padding: 60px 0;
+    margin-top: 30px;
+}
+
+/* Contenu du kit */
+.kit-contenu {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Petit titre au-dessus du titre principal */
+.kit-surtitre {
+    color: #6B4B8A;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Titre du kit */
+.kit-contenu h2 {
+    color: #382744;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Description du kit */
+.kit-contenu > p:not(.kit-surtitre):not(.kit-details):not(.kit-prix) {
+    color: #514957;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Détails inclus dans le kit */
+.kit-details {
+    color: #382744;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+/* Prix du kit */
+.kit-prix {
+    color: #6B4B8A;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Bouton du kit */
+.bouton-kit {
+    background-color: #6B4B8A;
+    border-color: #6B4B8A;
+    padding: 12px 25px;
+    border-radius: 6px;
+}
+
+.bouton-kit:hover,
+.bouton-kit:focus {
+    background-color: #52366D;
+    border-color: #52366D;
+}
