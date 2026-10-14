@@ -166,6 +166,36 @@ body {
     border-color: #52366D;
 }
 
+/* EN-TÊTE DE LA BOUTIQUE */
+.boutique {
+    padding: 50px 0 20px;
+}
+
+.boutique-entete {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.boutique-surtitre {
+    color: #6B4B8A;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.boutique-entete h2 {
+    color: #382744;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.boutique-entete > p:last-child {
+    color: #514957;
+    font-size: 16px;
+}
+
 
 /* ==============================
    CARTES PRODUITS
