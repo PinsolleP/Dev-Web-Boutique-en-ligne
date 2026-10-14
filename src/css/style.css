@@ -101,3 +101,28 @@ body {
     background-color: #52366D;
     border-color: #52366D;
 }
+
+/* Carte produit */
+
+.carte-produit {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+/* Image du produit */
+
+.produit-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.produit-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
