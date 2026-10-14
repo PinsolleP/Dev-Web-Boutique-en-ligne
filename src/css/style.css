@@ -193,6 +193,33 @@ body {
     display: block;
 }
 
+/* INFORMATIONS PRODUITS */
+.produit-infos {
+    padding: 15px 5px 5px;
+}
+
+.produit-prix {
+    color: #382744;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.bouton-ajouter {
+    background-color: #6B4B8A;
+    border-color: #6B4B8A;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    border-radius: 4px;
+}
+
+.bouton-ajouter:hover,
+.bouton-ajouter:focus {
+    background-color: #52366D;
+    border-color: #52366D;
+    color: #FFFFFF;
+}
+
 
 /* ==============================
    SECTION DU KIT CREATIF
