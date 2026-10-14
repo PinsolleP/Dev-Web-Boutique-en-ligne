@@ -54,3 +54,50 @@ body {
     letter-spacing: 2px;
     color: #4A352F;
 }
+
+/* ZONE D'ACCUEIL */
+
+.accueil {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.accueil-surtitre {
+    color: #6B4B8A;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.titre-accueil {
+    color: #382744;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.accueil-slogan {
+    color: #6B4B8A;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.accueil-description {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+    color: #382744;
+}
+
+.bouton-boutique {
+    background-color: #6B4B8A;
+    border-color: #6B4B8A;
+    padding: 12px 25px;
+    border-radius: 4px;
+}
+
+.bouton-boutique:hover {
+    background-color: #52366D;
+    border-color: #52366D;
+}
