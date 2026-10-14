@@ -126,3 +126,45 @@ body {
     object-fit: contain;
     display: block;
 }
+
+/* Image de la section d'accueil */
+.accueil-image {
+    width: 45%;
+    max-width: 450px;
+    margin: 30px auto;
+}
+
+.accueil-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+/* Organisation de la section d'accueil */
+.accueil .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Bloc de texte */
+.accueil-contenu {
+    width: 45%;
+}
+
+/* Bloc image */
+.accueil-image {
+    width: 55%;
+    max-width: 600px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.accueil-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
