@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../js/boutique.js"></script>
 </head>
 
 <body>
@@ -19,20 +21,31 @@
   <div class="row">
     <div class="col-sm-4">
       <h3>Découvrir cet article</h3>
-      <img src="img_test.jpg" alt="Test" width="500" height="600">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <img src="../../img/img_test.jpg" alt="Test" width="300" height="300">
+      <br/>
+      <br/>
+      <a href="#"><span>&#8592;</span>Retour à la boutique</a>
     </div>
     <div class="col-sm-4">
+      <br/>
+      <br/>
       <h3>Carnet Les petits jours</h3>
+      <p id="id_description">A5 . Papier ligné . 96 pages</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <p><span id="id_price">14,00 €</span></p>
+      <hr class="solid">
+      <br/>
+      <p><span id="id_quantity">Quantité</span></p>
+      <div class="div_increment_btn">
+        <div class="wrapper">
+          <span class="minus">-</span>
+          <span class="num">01</span>
+          <span class="plus">+</span>
+        </div>
+          <button type="button" class="btn btn-primary">Ajouter au panier</button>
+      </div>
     </div>
-    <!--<div class="col-sm-4">
-      <h3>Column 3</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>-->
   </div>
 </div>
 </body>
