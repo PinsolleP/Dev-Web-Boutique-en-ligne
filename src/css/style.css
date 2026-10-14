@@ -267,11 +267,23 @@ body {
     margin-top: 30px;
 }
 
-/* Contenu du kit */
+/* Organisation du kit */
 .kit-contenu {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+/* Texte à gauche */
+.kit-texte {
+    padding: 20px 35px 20px 15px;
+}
+
+.kit-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
 }
 
 /* Petit titre au-dessus du titre principal */
@@ -325,4 +337,48 @@ body {
 .bouton-kit:focus {
     background-color: #52366D;
     border-color: #52366D;
+}
+
+/* Pied de page */
+.pied-page {
+    background-color: #382744;
+    color: #F8F3EB;
+    padding: 40px 0 20px;
+    margin-top: 40px;
+}
+
+/* Titres du pied de page */
+.pied-page h3 {
+    color: #E5D9F0;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/* Liens */
+.pied-page a {
+    color: #F8F3EB;
+    text-decoration: none;
+}
+
+.pied-page a:hover {
+    color: #E5D9F0;
+    text-decoration: underline;
+}
+
+/* Bas du pied de page */
+.footer-bas {
+    border-top: 1px solid #6B4B8A;
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 12px;
 }
