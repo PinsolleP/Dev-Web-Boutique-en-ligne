@@ -1,203 +1,29 @@
-/* Fond de la page */
+/* ==============================
+   STYLE GENERAL
+   ============================== */
+
 body {
     background-color: #F8F3EB;
 }
 
-/* Barre de navigation */
-.navbar-default {
-    background-color: #E5D9F0;
-    border: none;
-}
 
-/* Liens de navigation */
-.navbar-default .navbar-nav > li > a {
-    color: #382744;
-}
+/* ==============================
+   NAVIGATION
+   ============================== */
 
-/* Survol des liens */
-.navbar-default .navbar-nav > li > a:hover {
-    color: #6B4B8A;
-}
-
-/* Logo */
-.logo-pli,
-.logo-description {
-    color: #382744;
-}
-
-/* Titre principal */
-.titre-accueil {
-    color: #382744;
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-/* LOGO */
-
-.navbar-brand {
-    display: flex;
-    align-items: center;
-    height: auto;
-}
-
-.logo-pli {
-    font-size: 36px;
-    font-weight: bold;
-    color: #4A352F;
-    margin-right: 12px;
-}
-
-.logo-description {
-    font-size: 10px;
-    line-height: 1.3;
-    letter-spacing: 2px;
-    color: #4A352F;
-}
-
-/* ZONE D'ACCUEIL */
-
-.accueil {
-    padding: 70px 0;
-    text-align: center;
-}
-
-.accueil-surtitre {
-    color: #6B4B8A;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
-}
-
-.titre-accueil {
-    color: #382744;
-    font-size: 48px;
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-
-.accueil-slogan {
-    color: #6B4B8A;
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-.accueil-description {
-    max-width: 600px;
-    margin: 0 auto 30px;
-    line-height: 1.8;
-    color: #382744;
-}
-
-.bouton-boutique {
-    background-color: #6B4B8A;
-    border-color: #6B4B8A;
-    padding: 12px 25px;
-    border-radius: 4px;
-}
-
-.bouton-boutique:hover {
-    background-color: #52366D;
-    border-color: #52366D;
-}
-
-/* Carte produit */
-
-.carte-produit {
-    background-color: #FFFFFF;
-    border-radius: 12px;
-    padding: 15px;
-    margin-bottom: 30px;
-}
-
-/* Image du produit */
-
-.produit-image {
-    width: 100%;
-    height: 220px;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-.produit-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-}
-
-/* Image de la section d'accueil */
-.accueil-image {
-    width: 45%;
-    max-width: 450px;
-    margin: 30px auto;
-}
-
-.accueil-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 12px;
-}
-
-/* Organisation de la section d'accueil */
-.accueil .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-/* Bloc de texte */
-.accueil-contenu {
-    width: 45%;
-}
-
-/* Bloc image */
-.accueil-image {
-    width: 55%;
-    max-width: 600px;
-    margin: 0;
-    flex-shrink: 0;
-}
-
-.accueil-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 12px;
-}
-
-/* Largeur du contenu de la page d'accueil */
-.accueil .container {
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-/* Bandeau de navigation */
 .navbar {
+    background-color: #E5D9F0;
     border: none;
     border-radius: 0;
     margin-bottom: 0;
-    background-color: #E5D9F0;
 }
 
-/* Contenu du bandeau */
 .navbar .container-fluid {
     max-width: 1100px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
 }
 
-/* Logo et nom de la marque */
 .navbar-brand {
     display: flex;
     align-items: center;
@@ -213,7 +39,7 @@ body {
     display: block;
 }
 
-/* Texte de la marque */
+/* Texte du logo */
 .logo-texte {
     display: flex;
     flex-direction: column;
@@ -241,7 +67,6 @@ body {
     padding: 25px 20px;
 }
 
-/* Survol des liens */
 .navbar-nav > li > a.lien-navigation:hover {
     color: #6B4B8A;
     background-color: #E5D9F0;
@@ -260,14 +85,126 @@ body {
     text-align: center;
 }
 
-/* Section du kit créatif */
+
+/* ==============================
+   SECTION D'ACCUEIL
+   ============================== */
+
+.accueil {
+    padding: 70px 0;
+}
+
+.accueil .container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Bloc de texte */
+.accueil-contenu {
+    width: 45%;
+}
+
+.accueil-surtitre {
+    color: #6B4B8A;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.titre-accueil {
+    color: #382744;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.accueil-slogan {
+    color: #6B4B8A;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.accueil-description {
+    max-width: 600px;
+    margin: 0 0 30px;
+    line-height: 1.8;
+    color: #382744;
+}
+
+/* Image d'accueil */
+.accueil-image {
+    width: 55%;
+    max-width: 600px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.accueil-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+/* Bouton boutique */
+.bouton-boutique {
+    background-color: #6B4B8A;
+    border-color: #6B4B8A;
+    padding: 12px 25px;
+    border-radius: 4px;
+}
+
+.bouton-boutique:hover,
+.bouton-boutique:focus {
+    background-color: #52366D;
+    border-color: #52366D;
+}
+
+
+/* ==============================
+   CARTES PRODUITS
+   ============================== */
+
+.carte-produit {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+/* Image du produit */
+.produit-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.produit-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* ==============================
+   SECTION DU KIT CREATIF
+   ============================== */
+
 .kit {
     background-color: #E5D9F0;
     padding: 60px 0;
     margin-top: 30px;
 }
 
-/* Organisation du kit */
+/* Organisation des deux colonnes */
 .kit-contenu {
     display: flex;
     align-items: center;
@@ -278,15 +215,6 @@ body {
     padding: 20px 35px 20px 15px;
 }
 
-.kit-image img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    display: block;
-    border-radius: 12px;
-}
-
-/* Petit titre au-dessus du titre principal */
 .kit-surtitre {
     color: #6B4B8A;
     font-size: 12px;
@@ -295,7 +223,6 @@ body {
     margin-bottom: 15px;
 }
 
-/* Titre du kit */
 .kit-contenu h2 {
     color: #382744;
     font-size: 32px;
@@ -303,26 +230,32 @@ body {
     margin-bottom: 20px;
 }
 
-/* Description du kit */
 .kit-contenu > p:not(.kit-surtitre):not(.kit-details):not(.kit-prix) {
     color: #514957;
     font-size: 16px;
     line-height: 1.7;
 }
 
-/* Détails inclus dans le kit */
 .kit-details {
     color: #382744;
     font-weight: bold;
     margin-top: 25px;
 }
 
-/* Prix du kit */
 .kit-prix {
     color: #6B4B8A;
     font-size: 28px;
     font-weight: bold;
     margin: 20px 0;
+}
+
+/* Image à droite */
+.kit-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
 }
 
 /* Bouton du kit */
@@ -339,7 +272,11 @@ body {
     border-color: #52366D;
 }
 
-/* Pied de page */
+
+/* ==============================
+   PIED DE PAGE
+   ============================== */
+
 .pied-page {
     background-color: #382744;
     color: #F8F3EB;
@@ -347,7 +284,6 @@ body {
     margin-top: 40px;
 }
 
-/* Titres du pied de page */
 .pied-page h3 {
     color: #E5D9F0;
     font-size: 18px;
@@ -363,7 +299,7 @@ body {
     margin-bottom: 5px;
 }
 
-/* Liens */
+/* Liens du pied de page */
 .pied-page a {
     color: #F8F3EB;
     text-decoration: none;
@@ -374,7 +310,7 @@ body {
     text-decoration: underline;
 }
 
-/* Bas du pied de page */
+/* Dernière ligne du pied de page */
 .footer-bas {
     border-top: 1px solid #6B4B8A;
     margin-top: 30px;
