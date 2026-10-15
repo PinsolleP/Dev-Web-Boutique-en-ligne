@@ -1,3 +1,380 @@
+/* ==============================
+   STYLE GENERAL
+   ============================== */
+
+body {
+    background-color: #F8F3EB;
+}
+
+
+/* ==============================
+   NAVIGATION
+   ============================== */
+
+.navbar {
+    background-color: #E5D9F0;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar .container-fluid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    padding: 10px 15px;
+}
+
+/* Image du logo */
+.logo-image {
+    height: 45px;
+    width: auto;
+    display: block;
+}
+
+/* Texte du logo */
+.logo-texte {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-nom {
+    color: #382744;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.logo-description {
+    color: #6B4B8A;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+/* Liens de navigation */
+.navbar-nav > li > a.lien-navigation {
+    color: #382744;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 25px 20px;
+}
+
+.navbar-nav > li > a.lien-navigation:hover {
+    color: #6B4B8A;
+    background-color: #E5D9F0;
+}
+
+/* Compteur du panier */
+.compteur-panier {
+    display: inline-block;
+    min-width: 24px;
+    padding: 3px 7px;
+    margin-left: 4px;
+    border-radius: 50%;
+    background-color: #6B4B8A;
+    color: #FFFFFF;
+    font-size: 13px;
+    text-align: center;
+}
+
+
+/* ==============================
+   SECTION D'ACCUEIL
+   ============================== */
+
+.accueil {
+    padding: 70px 0;
+}
+
+.accueil .container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Bloc de texte */
+.accueil-contenu {
+    width: 45%;
+}
+
+.accueil-surtitre {
+    color: #6B4B8A;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.titre-accueil {
+    color: #382744;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.accueil-slogan {
+    color: #6B4B8A;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.accueil-description {
+    max-width: 600px;
+    margin: 0 0 30px;
+    line-height: 1.8;
+    color: #382744;
+}
+
+/* Image d'accueil */
+.accueil-image {
+    width: 55%;
+    max-width: 600px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.accueil-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+/* Bouton boutique */
+.bouton-boutique {
+    background-color: #6B4B8A;
+    border-color: #6B4B8A;
+    padding: 12px 25px;
+    border-radius: 4px;
+}
+
+.bouton-boutique:hover,
+.bouton-boutique:focus {
+    background-color: #52366D;
+    border-color: #52366D;
+}
+
+/* EN-TÊTE DE LA BOUTIQUE */
+.boutique {
+    padding: 50px 0 20px;
+}
+
+.boutique-entete {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.boutique-surtitre {
+    color: #6B4B8A;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.boutique-entete h2 {
+    color: #382744;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.boutique-entete > p:last-child {
+    color: #514957;
+    font-size: 16px;
+}
+
+
+/* ==============================
+   CARTES PRODUITS
+   ============================== */
+
+.carte-produit {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+/* Image du produit */
+.produit-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.produit-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* INFORMATIONS PRODUITS */
+.produit-infos {
+    padding: 15px 5px 5px;
+}
+
+.produit-prix {
+    color: #382744;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.bouton-ajouter {
+    background-color: #6B4B8A;
+    border-color: #6B4B8A;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    border-radius: 4px;
+}
+
+.bouton-ajouter:hover,
+.bouton-ajouter:focus {
+    background-color: #52366D;
+    border-color: #52366D;
+    color: #FFFFFF;
+}
+
+
+/* ==============================
+   SECTION DU KIT CREATIF
+   ============================== */
+
+.kit {
+    background-color: #E5D9F0;
+    padding: 60px 0;
+    margin-top: 30px;
+}
+
+/* Organisation des deux colonnes */
+.kit-contenu {
+    display: flex;
+    align-items: center;
+}
+
+/* Texte à gauche */
+.kit-texte {
+    padding: 20px 35px 20px 15px;
+}
+
+.kit-surtitre {
+    color: #6B4B8A;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.kit-contenu h2 {
+    color: #382744;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.kit-contenu > p:not(.kit-surtitre):not(.kit-details):not(.kit-prix) {
+    color: #514957;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.kit-details {
+    color: #382744;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.kit-prix {
+    color: #6B4B8A;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Image à droite */
+.kit-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+/* Bouton du kit */
+.bouton-kit {
+    background-color: #6B4B8A;
+    border-color: #6B4B8A;
+    padding: 12px 25px;
+    border-radius: 6px;
+}
+
+.bouton-kit:hover,
+.bouton-kit:focus {
+    background-color: #52366D;
+    border-color: #52366D;
+}
+
+
+/* ==============================
+   PIED DE PAGE
+   ============================== */
+
+.pied-page {
+    background-color: #382744;
+    color: #F8F3EB;
+    padding: 40px 0 20px;
+    margin-top: 40px;
+}
+
+.pied-page h3 {
+    color: #E5D9F0;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/* Liens du pied de page */
+.pied-page a {
+    color: #F8F3EB;
+    text-decoration: none;
+}
+
+.pied-page a:hover {
+    color: #E5D9F0;
+    text-decoration: underline;
+}
+
+/* Dernière ligne du pied de page */
+.footer-bas {
+    border-top: 1px solid #6B4B8A;
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 12px;
+}
 #id_price{
     font-size: 20px;
     font-weight: bold;
