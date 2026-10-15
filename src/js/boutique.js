@@ -205,4 +205,15 @@ $(document).ready(function () {
 
     }
 
+    const vueAccueil = document.querySelector("#vue-accueil");
+    const vueBoutique = document.querySelector("#vue-boutique");
+    const boutonOuvrirBoutique = document.querySelector("#ouvrir-boutique");
+
+    if (vueAccueil && vueBoutique && boutonOuvrirBoutique) {
+        boutonOuvrirBoutique.addEventListener("click", function () {
+            vueAccueil.style.display = "none";
+            vueBoutique.style.display = "block";
+        });
+    }
+
 });
