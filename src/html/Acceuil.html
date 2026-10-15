@@ -42,6 +42,7 @@
     </header>
 
     <main>
+        <div id="vue-accueil">
         <section class="accueil">
             <div class="container">
 
@@ -161,7 +162,7 @@
                                 <h3>
                                     <a href="AfficherUnArticle.html">Stickers Jardin d'idées</a>
                                 </h3>
-                                
+
                                 <p>2 planches · Finition mate</p>
                                 <p class="produit-prix">5,00 €</p>
                                 <button class="btn btn-primary bouton-ajouter">Ajouter</button>
@@ -212,6 +213,45 @@
                 </div>
             </div>
         </section>
+        </div>
+        <section id="vue-boutique" style="display: none;">
+        <div class="container">
+
+            <header class="boutique-entete">
+                <p class="surtitre">PAPETERIE CRÉATIVE</p>
+                <h1>La boutique</h1>
+                <p>Trouvez les petits trésors qui donneront vie à vos idées.</p>
+            </header>
+
+            <section class="categories" aria-label="Catégories de produits">
+                <h2>Explorer nos créations</h2>
+
+                <div class="categories-liste">
+                    <button type="button" class="categorie active" data-categorie="tous">
+                        Tout voir
+                    </button>
+                    <button type="button" class="categorie" data-categorie="carnets">
+                        Carnets
+                    </button>
+                    <button type="button" class="categorie" data-categorie="accessoires">
+                        Accessoires créatifs
+                    </button>
+                    <button type="button" class="categorie" data-categorie="stickers">
+                        Stickers
+                    </button>
+                    <button type="button" class="categorie" data-categorie="kits">
+                        Kits
+                    </button>
+                </div>
+            </section>
+
+            <section class="boutique-produits">
+                <h2>Nos créations</h2>
+                <div id="liste-produits" class="row"></div>
+            </section>
+
+        </div>
+    </section>
     </main>
     <!-- Pied de page -->
     <footer class="pied-page">
