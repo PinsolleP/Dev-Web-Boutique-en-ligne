@@ -1,23 +1,26 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-const plus = document.querySelector(".plus");
-const minus = document.querySelector(".minus");
-const num = document.querySelector(".num");
+    const plus = document.querySelector(".plus");
+    const minus = document.querySelector(".minus");
+    const num = document.querySelector(".num");
 
-let a = 1;
+    // Vérifier que le compteur existe sur la page
+    if (plus && minus && num) {
 
-plus.addEventListener("click", ()=>{
-    a++;
-    a = (a < 10) ? "0" + a : a;
-    num.textContent = a;
-})
+        let a = 1;
 
-minus.addEventListener("click", ()=>{
-    if(a > 1){
-        a--;
-        a = (a < 10) ? "0" + a : a;
-        num.textContent = a;
+        plus.addEventListener("click", () => {
+            a++;
+            num.textContent = a < 10 ? "0" + a : a;
+        });
+
+        minus.addEventListener("click", () => {
+            if (a > 1) {
+                a--;
+                num.textContent = a < 10 ? "0" + a : a;
+            }
+        });
+
     }
-})
 
 });
