@@ -1,12 +1,16 @@
+
+/* Modifier la taille et l'épaisseur de la police du prix d'un article.*/
 #id_price{
     font-size: 20px;
     font-weight: bold;
 }
 
+/* Ajouter un trait de séparation entre article. */
 hr.solid {
   border-top: 2px solid #bbb;
 }
 
+/* Utiliser l'élément flex afin de centrer les éléments du bouton affichant la quantité d'article. */
 .wrapper{
     height: 50px;
     width: 100px;
@@ -17,6 +21,7 @@ hr.solid {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Centrer le contenu de la balise span. */
 .wrapper span{
     width: 100%;
     text-align: center;
@@ -25,6 +30,7 @@ hr.solid {
     cursor: pointer;
 }
 
+/* Modifier la taille de la police de la quantité et placer les bordures. */
 .wrapper span.num{
     font-size: 20px;
     border-right: 2px solid rgba(0, 0, 0, 0.2);
@@ -32,37 +38,73 @@ hr.solid {
     pointer-events: none;
 }
 
+/* Utiliser le flex afin de centrer les éléments de l'affichage de la quantité. */
 .div_increment_btn{
     display: flex;
     align-items: center;
 }
 
+/* Modifier la police de l'élément quantité. */
 #id_quantity{
     font-size: 14px;
     font-weight: bold;
 }
 
+/* Modifier la police de l'élément description */
 #id_description{
     font-size: 10px;
 }
 
+/* Modifier la police de la balise <h3>. */
 h3{
     font-weight: bold;
     font-size: 20px;
 
 }
 
+/* Modifier la police de l'élément panier. */
 .shopping_cart{
     font-weight: bold;
     font-size: 50px;
 }
 
+/* Souligner le contenu de la balise <a>. */
 #delete_btn{
     text-decoration: underline;
 }
 
+/* Utiliser l'élément flex afin d'aligner en ligne horizontal le contenu. */
 #id_box{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+}
+
+/* Modifier la police de l'élément indiquant le prix total d'un article en fonction de la quantité. */
+#total-price-article{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+/* Modifier la police de l'élément Total. */
+#total-price-articles{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Modifier l'emplacement de la balise <span> et du bouton Passer commande. */
+#id-total-price-order-btn{
+    margin-top: 230px;
+}
+
+/* Modifier l'emplacement des éléments contenu dans la balise <div>. */
+#id-total-delivery-order{
+    margin-top: 90px;
+}
+
+/* Modifier la police du montant total du panier. */
+#id-total-value{
+    font-size: 40px;
+    font-weight: bold;
 }
