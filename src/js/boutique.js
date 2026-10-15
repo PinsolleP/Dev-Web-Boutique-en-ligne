@@ -151,6 +151,37 @@ $(document).ready(function () {
 
     afficherProduits(produits);
 
+    const boutonsCategories = document.querySelectorAll(".categorie");
+
+    boutonsCategories.forEach(function (bouton) {
+
+        bouton.addEventListener("click", function () {
+
+            const categorieChoisie = bouton.dataset.categorie;
+
+            let produitsFiltres;
+
+            if (categorieChoisie === "tous") {
+                produitsFiltres = produits;
+            } else {
+                produitsFiltres = produits.filter(function (produit) {
+                    return produit.categorie === categorieChoisie;
+                });
+            }
+
+            afficherProduits(produitsFiltres);
+
+            // Mettre à jour la catégorie sélectionnée
+            boutonsCategories.forEach(function (autreBouton) {
+                autreBouton.classList.remove("active");
+            });
+
+            bouton.classList.add("active");
+
+        });
+
+    });
+
     const plus = document.querySelector(".plus");
     const minus = document.querySelector(".minus");
     const num = document.querySelector(".num");
