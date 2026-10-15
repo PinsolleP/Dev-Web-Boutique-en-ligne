@@ -40,6 +40,62 @@ $(document).ready(function () {
             prix: 29.00,
             image: "kit-creatif.jpg",
             categorie: "kits"
+        },
+        {
+            id: 6,
+            nom: "Carnet Jardin secret",
+            description: "Carnet illustré, format A5",
+            prix: 12.00,
+            image: "carnet.jpg",
+            categorie: "carnets"
+        },
+        {
+            id: 7,
+            nom: "Bloc-notes Douce pensée",
+            description: "Bloc-notes pour toutes vos idées",
+            prix: 8.00,
+            image: "carnet.jpg",
+            categorie: "carnets"
+        },
+        {
+            id: 8,
+            nom: "Stylos pastel",
+            description: "Un assortiment de stylos colorés",
+            prix: 6.00,
+            image: "crayonCouleur.jpg",
+            categorie: "accessoires"
+        },
+        {
+            id: 9,
+            nom: "Stickers fleurs",
+            description: "Des motifs fleuris et délicats",
+            prix: 4.50,
+            image: "stickersJardin.jpg",
+            categorie: "stickers"
+        },
+        {
+            id: 10,
+            nom: "Stickers petits mots",
+            description: "Pour décorer et personnaliser",
+            prix: 4.00,
+            image: "stickersJardin.jpg",
+            categorie: "stickers"
+        },
+        {
+            id: 11,
+            nom: "Kit carnet & couleurs",
+            description: "Un carnet et de quoi le décorer",
+            prix: 24.00,
+            image: "kit-creatif.jpg",
+            categorie: "kits"
+        },
+        {
+            id: 12,
+            nom: "Kit stickers & déco",
+            description: "Un assortiment pour vos créations",
+            prix: 18.00,
+            image: "kit-creatif.jpg",
+            categorie: "kits"
         }
     ];
 
