@@ -99,6 +99,58 @@ $(document).ready(function () {
         }
     ];
 
+    function afficherProduits(liste) {
+
+        const conteneur = document.querySelector("#liste-produits");
+
+        // Vérifier que la zone du catalogue existe
+        if (!conteneur) {
+            return;
+        }
+
+        // Vider la liste avant de générer les cartes
+        conteneur.innerHTML = "";
+
+        liste.forEach(function (produit) {
+
+            const carte = `
+                <div class="col-sm-6 col-md-4">
+                    <div class="carte-produit">
+
+                        <img
+                            src="../../img/${produit.image}"
+                            alt="${produit.nom}"
+                            class="img-responsive produit-image"
+                        >
+
+                        <div class="produit-infos">
+                            <h3>${produit.nom}</h3>
+                            <p>${produit.description}</p>
+
+                            <p class="produit-prix">
+                                ${produit.prix.toFixed(2).replace(".", ",")} €
+                            </p>
+
+                            <button
+                                type="button"
+                                class="btn btn-primary bouton-ajouter"
+                                data-id="${produit.id}"
+                            >
+                                Ajouter au panier
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            `;
+
+            conteneur.innerHTML += carte;
+
+        });
+    }
+
+    afficherProduits(produits);
+
     const plus = document.querySelector(".plus");
     const minus = document.querySelector(".minus");
     const num = document.querySelector(".num");
