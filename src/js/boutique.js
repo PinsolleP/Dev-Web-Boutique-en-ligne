@@ -205,15 +205,27 @@ $(document).ready(function () {
 
     }
 
+    // Navigation entre l'accueil et la boutique
     const vueAccueil = document.querySelector("#vue-accueil");
     const vueBoutique = document.querySelector("#vue-boutique");
     const boutonOuvrirBoutique = document.querySelector("#ouvrir-boutique");
+    const boutonRetourAccueil = document.querySelector("#retour-accueil");
 
-    if (vueAccueil && vueBoutique && boutonOuvrirBoutique) {
-        boutonOuvrirBoutique.addEventListener("click", function () {
-            vueAccueil.style.display = "none";
-            vueBoutique.style.display = "block";
-        });
+    if (vueAccueil && vueBoutique) {
+    if (boutonOuvrirBoutique) {
+    boutonOuvrirBoutique.addEventListener("click", function () {
+    vueAccueil.style.display = "none";
+    vueBoutique.style.display = "block";
+    });
+    }
+
+        if (boutonRetourAccueil) {
+            boutonRetourAccueil.addEventListener("click", function () {
+                vueBoutique.style.display = "none";
+                vueAccueil.style.display = "block";
+            });
+        }
+
     }
 
 });
